@@ -90,6 +90,7 @@ define('DOMAIN_CURRENT_SITE', 'hitohana.xsrv.jp');
 define('PATH_CURRENT_SITE', '/');
 define('SITE_ID_CURRENT_SITE', 1);
 define('BLOG_ID_CURRENT_SITE', 1);
+define( 'SUNRISE', 'on' );
 
 /* 編集が必要なのはここまでです ! WordPress でブログをお楽しみください。 */
 
