@@ -81,7 +81,6 @@ $table_prefix  = 'wp_';
  *
  * @link http://wpdocs.osdn.jp/WordPress%E3%81%A7%E3%81%AE%E3%83%87%E3%83%90%E3%83%83%E3%82%B0
  */
-define('WP_DEBUG', false);
 define('WP_ALLOW_MULTISITE', true);
 
 define('MULTISITE', true);
@@ -91,6 +90,13 @@ define('PATH_CURRENT_SITE', '/');
 define('SITE_ID_CURRENT_SITE', 1);
 define('BLOG_ID_CURRENT_SITE', 1);
 define( 'SUNRISE', 'on' );
+
+define('WP_DEBUG', true);
+if ( WP_DEBUG ) {
+    define( 'WP_DEBUG_LOG', true );
+    define( 'WP_DEBUG_DISPLAY', false );
+    @ini_set( 'display_errors',0 );
+}
 
 /* 編集が必要なのはここまでです ! WordPress でブログをお楽しみください。 */
 
